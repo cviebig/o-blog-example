@@ -1,0 +1,8 @@
+ o-blog 2.6 example project
+============================
+
+Tested with:
+
+  - Emacs 24.5
+  - org-mode 8.2.10 (elpa org-20150413)
+  - o-blog v2.6 branch (34f817a1b5c7d0f7bf84ee48180b95aa0ebe22e9)

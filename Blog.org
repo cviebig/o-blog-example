@@ -1,0 +1,100 @@
+#+TITLE: o-blog
+#+DATE: 2014-07-07 20:30:23
+
+#+DESCRIPTION: A stand-alone blogging system for Org-mode.
+#+TEMPLATE_DIR: templates
+#+STYLE_DIR: templates/style
+#+ASSETS_DIR: exports
+
+* Blog
+** Index
+  :PROPERTIES:
+  :PAGE:     index.html
+  :END:
+
+Index page content.
+
+** Blog details
+*** Copyright
+  :PROPERTIES:
+  :SNIPPET:  t
+  :END:
+
+Copyright content.
+
+*** About
+  :PROPERTIES:
+  :SNIPPET:  t
+  :END:
+
+About contents.
+
+*** Navigation
+  :PROPERTIES:
+  :SNIPPET:  t
+  :END:
+
+Navbar contents.
+
+*** Navigation Footer
+  :PROPERTIES:
+  :SNIPPET:  t
+  :END:
+
+Footer contents.
+
+** Changelog
+  :PROPERTIES:
+  :PAGE:     changelog.html
+  :END:
+
+This is a sample site.
+
+#+BEGIN_SRC sh :exports results :results output code
+git log -n 3
+#+END_SRC
+** Reports
+*** My first post						       :Post:
+  CLOSED: [2012-01-07 Sat 00:13]
+
+This is some pice of code:
+#+BEGIN_SRC python :session :exports code :results output silent
+def compute_mapping_points(s, m):
+  def get_mapping_points(mapping, mapped_point):
+    point_mapping = mapping.intersect_range(BasicSet.from_point(mapped_point))
+    mapping_points = []
+    point_mapping.domain().foreach_point(lambda mapping_point: mapping_points.append(mapping_point))
+    return mapping_points
+  subsets = []
+  s.foreach_set(lambda subset: subsets.append(subset))
+  bounded_map = m
+  for subset in subsets:
+    subsubsets = subset.get_basic_sets()
+    for subsubset in subsubsets:
+      bounded_map = bounded_map.intersect_domain(subsubset) 
+  mapping_points = []
+  bounded_map.range().foreach_point(lambda mapped_point: mapping_points.append({'target': mapped_point, 'points': get_mapping_points(bounded_map, mapped_point)}))
+  return mapping_points
+#+END_SRC
+
+** Blog
+*** Lorem ipsum							 :Post:Emacs:
+  CLOSED: [2012-01-07 Sat 00:13]
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit
+tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt
+et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et
+magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec
+vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan
+nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
+** Debug
+   :PROPERTIES:
+   :PAGE:     debug.html
+   :TEMPLATE: debug.html
+   :SITEMAP:  f
+   :END:      
+** Articles by tags
+  :PROPERTIES:
+  :PAGE:     tags.html
+  :TEMPLATE: blog_post-by-tags.html
+  :END:
