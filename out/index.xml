@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>o-blog</title>
+  <link href="index.xml" rel="self" />
+  <link href=""/>
+  <updated>2015-10-21T17:16:39Z</updated>
+  <id>index.xml</id>
+  <entry><title type="html">My first post</title><author><name>nil</name></author><link href="nil/reports/2012/01/my-first-post/index.html"/><updated>2012-01-07T00:13:00Z</updated><published>2012-01-07T00:13:00Z</published><id>reports/2012/01/my-first-post/index.html</id><content type="html">&lt;p&gt;
+This is some pice of code:
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span style="color: #00bfff;"&gt;def&lt;/span&gt; &lt;span style="color: #daa520;"&gt;compute_mapping_points&lt;/span&gt;(s, m):
+  &lt;span style="color: #00bfff;"&gt;def&lt;/span&gt; &lt;span style="color: #daa520;"&gt;get_mapping_points&lt;/span&gt;(mapping, mapped_point):
+    &lt;span style="color: #4eee94;"&gt;point_mapping&lt;/span&gt; = mapping.intersect_range(BasicSet.from_point(mapped_point))
+    &lt;span style="color: #4eee94;"&gt;mapping_points&lt;/span&gt; = []
+    point_mapping.domain().foreach_point(&lt;span style="color: #00bfff;"&gt;lambda&lt;/span&gt; mapping_point: mapping_points.append(mapping_point))
+    &lt;span style="color: #00bfff;"&gt;return&lt;/span&gt; mapping_points
+  &lt;span style="color: #4eee94;"&gt;subsets&lt;/span&gt; = []
+  s.foreach_set(&lt;span style="color: #00bfff;"&gt;lambda&lt;/span&gt; subset: subsets.append(subset))
+  &lt;span style="color: #4eee94;"&gt;bounded_map&lt;/span&gt; = m
+  &lt;span style="color: #00bfff;"&gt;for&lt;/span&gt; subset &lt;span style="color: #00bfff;"&gt;in&lt;/span&gt; subsets:
+    &lt;span style="color: #4eee94;"&gt;subsubsets&lt;/span&gt; = subset.get_basic_sets()
+    &lt;span style="color: #00bfff;"&gt;for&lt;/span&gt; subsubset &lt;span style="color: #00bfff;"&gt;in&lt;/span&gt; subsubsets:
+      &lt;span style="color: #4eee94;"&gt;bounded_map&lt;/span&gt; = bounded_map.intersect_domain(subsubset) 
+  &lt;span style="color: #4eee94;"&gt;mapping_points&lt;/span&gt; = []
+  bounded_map.&lt;span style="color: #f08080;"&gt;range&lt;/span&gt;().foreach_point(&lt;span style="color: #00bfff;"&gt;lambda&lt;/span&gt; mapped_point: mapping_points.append({&lt;span style="color: #deb887;"&gt;'target'&lt;/span&gt;: mapped_point, &lt;span style="color: #deb887;"&gt;'points'&lt;/span&gt;: get_mapping_points(bounded_map, mapped_point)}))
+  &lt;span style="color: #00bfff;"&gt;return&lt;/span&gt; mapping_points
+&lt;/pre&gt;
+&lt;/div&gt;
+</content></entry><entry><title type="html">Lorem ipsum</title><author><name>nil</name></author><link href="nil/blog/2012/01/lorem-ipsum/index.html"/><updated>2012-01-07T00:13:00Z</updated><published>2012-01-07T00:13:00Z</published><id>blog/2012/01/lorem-ipsum/index.html</id><category scheme="/tags/emacs.html" term="Emacs" label="Emacs"/><content type="html">&lt;p&gt;
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit
+tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt
+et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et
+magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec
+vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan
+nulla. Nullam rutrum. Nam vestibulum accumsan nisl.&lt;/p&gt;
+</content></entry>
+</feed>

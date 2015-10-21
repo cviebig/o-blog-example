@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>o-blog</title>
+  <link href="index.xml" rel="self" />
+  <link href=""/>
+  <updated>2015-10-21T17:16:39Z</updated>
+  <id>index.xml</id>
+  <entry><title type="html">Lorem ipsum</title><author><name>nil</name></author><link href="nil/blog/2012/01/lorem-ipsum/index.html"/><updated>2012-01-07T00:13:00Z</updated><published>2012-01-07T00:13:00Z</published><id>blog/2012/01/lorem-ipsum/index.html</id><category scheme="/tags/emacs.html" term="Emacs" label="Emacs"/><content type="html">&lt;p&gt;
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit
+tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt
+et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et
+magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec
+vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan
+nulla. Nullam rutrum. Nam vestibulum accumsan nisl.&lt;/p&gt;
+</content></entry>
+</feed>

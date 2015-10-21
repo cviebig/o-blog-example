@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8"/>
+    <title>My first post</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="generator" content="o-blog v2.0"/>
+    <link rel="icon" type="image/png" href="../../../../style/img/favicon.png" />
+    <script src="../../../../style/js/sidjs.min.js" async></script>
+    <script>
+      !function(){var a=function(b,c,d,e,f){return"undefined"==typeof e&&(e=10),"undefined"==typeof f&&(f=1e3),b()?c(d):void(f>=0&&setTimeout(function(){a(b,c,d,e,f-e)},e))};window.RunIf={runif:function(b,c,d,e,f){return a(b,c,d,e,f)}}}();
+      var path_to_root="../../../..",ob_this_page="reports/2012/01/my-first-post/index.html";RunIf.runif(function(){return window.Sid},function(){var a=/^http:/.test(document.location)?"http:":"https:";Sid.css("../../../../style/css/o-blog.min.css",function(){RunIf.runif(function(){return window.jQuery},function(){$(".row").equalizer({columns:".thumbnail"}),$(".row").equalizer({columns:".src"})},void 0,100,6e4)},"head"),Sid.js("../../../../style/js/spin.min.js",function(){ob_spinner=new Spinner({color:"#bbb"}).spin(document.getElementById("ob-spinner"))},"head"),Sid.js("../../../../style/js/o-blog.min.js",void 0,"head");var b="";""!==b&&Sid.js(a+"//platform.linkedin.com/in.js",void 0,"head");var c="";""!==c&&Sid.js(a+"//platform.twitter.com/widgets.js",void 0,"head");var d="";""!==d&&Sid.js(a+"//apis.google.com/js/platform.js",void 0,"head");var d="";""!==d&&Sid.js(a+"//www.google-analytics.com/analytics.js",function(){ga("create",d,"auto"),ga("send","pageview")},"head")});
+    </script>
+  </head>
+  <body>
+    <div id="spinner" style="width:100%;height:100%;position:fixed;top:0;bottom:0;left:0;right:0;margin:auto;z-index:999998;background-color:rgba(0,0,0,0.5);">
+      <div id="ob-spinner" style="width:100px;height:100px;position:fixed;top:0;bottom:0;left:0;right:0;margin:auto;z-index:999999;background-color:rgba(127,127,127,0.5);"></div>
+    </div>
+    <div id="page" class="container">
+
+  <div class="article">
+  <header class="article-header">
+    <div class="page-header">
+      <div>
+	<div class="time">
+	  <time datetime="2012-01-07"></time>
+	  <div>
+	    <span class="day">07</span>
+	    <span class="month"><a href="../../../../reports/2012/01/index.html">Jan</a>
+	    </span>
+	    <span class="year"><a href="../../../../reports/2012/index.html">2012</a></span>
+	  </div>
+	</div>
+	
+	<h1>My first post</h1>
+      </div>
+      <div>
+	<nav>
+	  <ul class="pager">
+	    <li class="previous">&nbsp;</li><li class="next">&nbsp;</li>
+	  </ul>
+	</nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="article-content">
+    <p>
+This is some pice of code:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #00bfff;">def</span> <span style="color: #daa520;">compute_mapping_points</span>(s, m):
+  <span style="color: #00bfff;">def</span> <span style="color: #daa520;">get_mapping_points</span>(mapping, mapped_point):
+    <span style="color: #4eee94;">point_mapping</span> = mapping.intersect_range(BasicSet.from_point(mapped_point))
+    <span style="color: #4eee94;">mapping_points</span> = []
+    point_mapping.domain().foreach_point(<span style="color: #00bfff;">lambda</span> mapping_point: mapping_points.append(mapping_point))
+    <span style="color: #00bfff;">return</span> mapping_points
+  <span style="color: #4eee94;">subsets</span> = []
+  s.foreach_set(<span style="color: #00bfff;">lambda</span> subset: subsets.append(subset))
+  <span style="color: #4eee94;">bounded_map</span> = m
+  <span style="color: #00bfff;">for</span> subset <span style="color: #00bfff;">in</span> subsets:
+    <span style="color: #4eee94;">subsubsets</span> = subset.get_basic_sets()
+    <span style="color: #00bfff;">for</span> subsubset <span style="color: #00bfff;">in</span> subsubsets:
+      <span style="color: #4eee94;">bounded_map</span> = bounded_map.intersect_domain(subsubset) 
+  <span style="color: #4eee94;">mapping_points</span> = []
+  bounded_map.<span style="color: #f08080;">range</span>().foreach_point(<span style="color: #00bfff;">lambda</span> mapped_point: mapping_points.append({<span style="color: #deb887;">'target'</span>: mapped_point, <span style="color: #deb887;">'points'</span>: get_mapping_points(bounded_map, mapped_point)}))
+  <span style="color: #00bfff;">return</span> mapping_points
+</pre>
+</div>
+
+  </div>
+  
+  <footer class="article-footer">
+    <!-- Posted on <time datetime="2012-01-07T00:13:00Z"> Saturday January, 07 2012 at 00:13:00</time>. -->
+    <nav class="tag-cloud">
+      <i class="fa fa-tags"></i>
+      <ul>
+	
+      </ul>
+    </nav>
+
+  </footer>
+  <div class="ob-share">
+  <div class="title">If you like this article you may want to share it</div>
+  <div class="social-container">
+    
+    
+    
+  </div>
+</div>
+
+
+  </div>
+  
+        </div>
+    <div class="ob-navbar-container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ob-navbar">
+	  <span class="sr-only">Toggle navigation</span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	</button>
+	<a class="navbar-brand" href="../../../../index.html">o-blog</a>
+      </div>
+      <div class="collapse navbar-collapse ob-navbar">
+	<p>
+Navbar contents.
+</p>
+
+      </div>
+    </nav>
+
+    <div class="subnav subnav-fixed visible-desktop">
+      <div class="container">
+	<ul class="breadcrumb">
+  <li><a href="../../../../index.html">Home</a> <span class="divider"></span></li>
+  <li><a href="../../../../reports/index.html">Reports</a> <span class="divider"></span></li><li><a href="../../../../reports/2012/index.html">2012</a> <span class="divider"></span></li><li><a href="../../../../reports/2012/01/index.html">01</a> <span class="divider"></span></li><li>My first post</li>
+  </ul>
+
+      </div>
+    </div>
+    </div>
+
+<div id="footer">
+	<div class="container">
+	  <div class="row">
+	    <nav class="col-md-3 col-sm-3 col-xs-6">
+	      <h2>About</h2>
+	      <!-- about -->
+	      <p>
+About contents.
+</p>
+
+	      <!-- /about -->
+	    </nav>
+	    <nav id="links" class="col-md-3 col-sm-3 col-xs-6">
+	      <h2>Links</h2>
+	      <!-- Navigation Footer -->
+	      <p>
+Footer contents.
+</p>
+
+	      <!-- Navigation Footer -->
+	    </nav>
+	    <nav id="archives" class="col-md-3 col-sm-3 col-xs-6">
+	      <h2><a href="../../../../archives.html">Archives</a></h2>
+	      <div>
+<h6><a href="../../../../reports/index.html">Reports</a></h6>
+<div class="ob-articles" data-source="../../../../articles.js" data-path-to-root="../../../.." data-category="Reports"></div>
+</div><div>
+<h6><a href="../../../../blog/index.html">Blog</a></h6>
+<div class="ob-articles" data-source="../../../../articles.js" data-path-to-root="../../../.." data-category="Blog"></div>
+</div>
+	    </nav>
+	    <nav class="tags col-md-3 col-sm-3 col-xs-6">
+	      <h2><a href="../../../../tags/index.html">Tags</a></h2>
+	      <span class="ob-tagcloud" data-source="../../../../tags.js" data-path-to-root="../../../.."></span>
+	    </nav>
+	  </div>
+	</div>
+	<div class="copyright" style="text-align: center;">
+	  <!-- copyright -->
+	  <p>
+Copyright content.
+</p>
+
+	  <p>Powered by <a href="https://github.com/renard/o-blog">o-blog</a>.</p>
+	  <p>
+	    <a href="http://validator.w3.org/check?uri=nil%2Freports%2F2012%2F01%2Fmy-first-post%2Findex.html" data-toggle="tooltip" data-placement="top" title="HTML 5 valid"><i class="fa fa-html5"></i></a>
+	    <a href="http://jigsaw.w3.org/css-validator/validator?uri=nil%2Freports%2F2012%2F01%2Fmy-first-post%2Findex.html" data-toggle="tooltip" data-placement="top" title="CSS 3 valid"><i class="fa fa-css3"></i></a>
+	    <a href="https://www.google.com/webmasters/tools/mobile-friendly/?url=nil%2Freports%2F2012%2F01%2Fmy-first-post%2Findex.html" data-toggle="tooltip" data-placement="top" title="Mobile friendly"><i class="fa fa-mobile"></i></a>
+	    <a href="https://developers.google.com/speed/pagespeed/insights/?url=nil%2Freports%2F2012%2F01%2Fmy-first-post%2Findex.html" data-toggle="tooltip" data-placement="top" title="PageSpeed Insights"><i class="fa fa-flag-checkered"></i></a>
+	  </p>
+	</div>
+      </div>
+</body>
+</html>
+
